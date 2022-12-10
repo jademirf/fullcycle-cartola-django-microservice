@@ -1,0 +1,17 @@
+from django.contrib import admin
+from .models import Player, Team, MyTeam, Match, Action
+
+
+# Add custom config to match admin
+class ActionInline(admin.TabularInline):
+  model = Action
+  
+class MatchAdmin(admin.ModelAdmin):
+  inlines = [ActionInline]
+
+# Register your models here.
+admin.site.register(Action)
+admin.site.register(Match, MatchAdmin)
+admin.site.register(MyTeam)
+admin.site.register(Player)
+admin.site.register(Team)

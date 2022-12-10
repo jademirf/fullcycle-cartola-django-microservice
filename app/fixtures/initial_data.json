@@ -1,0 +1,112 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$iLXxKtZYZZD7Rsj4VcgUdz$QFbPqodefpUPNL9kzQwq1+HfMUs2bUuGxscgITCxjoQ=",
+      "last_login": "2022-12-10T18:23:56.712Z",
+      "is_superuser": true,
+      "username": "admin@user.com",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@user.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-12-10T18:23:00.597Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.player",
+    "pk": 1,
+    "fields": {
+      "name": "Biu",
+      "initial_price": 10.0
+    }
+  },
+  {
+    "model": "app.player",
+    "pk": 2,
+    "fields": {
+      "name": "Biuzinho",
+      "initial_price": 9.0
+    }
+  },
+  {
+    "model": "app.player",
+    "pk": 3,
+    "fields": {
+      "name": "Zé do gás",
+      "initial_price": 5.0
+    }
+  },
+  {
+    "model": "app.team",
+    "pk": 1,
+    "fields": {
+      "name": "Com camisa"
+    }
+  },
+  {
+    "model": "app.team",
+    "pk": 2,
+    "fields": {
+      "name": "Sem camisa"
+    }
+  },
+  {
+    "model": "app.myteam",
+    "pk": 1,
+    "fields": {
+      "players": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "app.match",
+    "pk": 1,
+    "fields": {
+      "match_date": "2022-12-10T19:30:16Z",
+      "team_a": 1,
+      "team_a_goals": 1,
+      "team_b": 2,
+      "team_b_goals": 2
+    }
+  },
+  {
+    "model": "app.action",
+    "pk": 1,
+    "fields": {
+      "player": 1,
+      "team": 1,
+      "minutes": 15,
+      "match": 1,
+      "action": "goal"
+    }
+  },
+  {
+    "model": "app.action",
+    "pk": 2,
+    "fields": {
+      "player": 2,
+      "team": 2,
+      "minutes": 29,
+      "match": 1,
+      "action": "goal"
+    }
+  },
+  {
+    "model": "app.action",
+    "pk": 3,
+    "fields": {
+      "player": 1,
+      "team": 1,
+      "minutes": 42,
+      "match": 1,
+      "action": "yellow card"
+    }
+  }
+]
